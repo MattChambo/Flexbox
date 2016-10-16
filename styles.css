@@ -1,4 +1,90 @@
-nav {
+#latest img {
+	width: 100%;
+}
+
+body {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#latest {
+	flex: 1;
+}
+
+@media ( min-width: 500px) {
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		}
+	nav ul {
+		display: flex;
+		list-style: none;
+	}
+
+	nav li {
+		margin-left: 1em;
+	}
+
+	#latest {
+		display: flex;
+	}
+
+	#latest article {
+		flex: 1;
+		margin: .5em;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		background-color: #333;
+		color: white;
+	}
+
+	footer a {
+		color: inherit;
+	}
+
+	#categories {
+		background-color: #eee;
+		width: 66%;
+		display: flex;
+		flex-wrap: wrap; /* The items are allowed to drop to the next line */
+		justify-content: space-between;
+	}
+
+	#main-categories {
+		width: 100%;
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+		padding-left: 0; 
+	}
+
+	#main-categories li {
+		flex: 1;
+		text-align: center;
+		padding: 1em;
+	}
+
+	#main-categories li:nth-child(1) {
+		background-color: red;
+	}
+
+	#main-categories li:nth-child(2) {
+		background-color: yellow;
+	}
+
+	#main-categories li:nth-child(3) {
+		background-color: green;
+	}
+
+	#main-categories li:nth-child(4) {
+		background-color: brown;
+	}
+
+
 }
